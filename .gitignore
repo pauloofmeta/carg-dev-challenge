@@ -1,0 +1,7 @@
+.vs/
+*.user
+*.csproj.user
+bin/
+obj/
+src/Comprall.Migrations/Migrations/
+.idea/

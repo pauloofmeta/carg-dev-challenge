@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyAddresses.Services.Abstractions\MyAddresses.Services.Abstractions.csproj" />
+    <ProjectReference Include="..\MyAddresses.Domain\MyAddresses.Domain.csproj" />
+    <ProjectReference Include="..\MyAddresses.Services\MyAddresses.Services.csproj" />
+    <ProjectReference Include="..\MyAddresses.Repositories\MyAddresses.Repositories.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="FluentValidation" Version="9.4.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.10" />
+    <PackageReference Include="Refit.HttpClientFactory" Version="5.2.4" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+
+</Project>

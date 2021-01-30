@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+  my-addresses-api:
+    container_name: 'MyAddressWebApi'
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - '8001:80'
+      - '8002:443'
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - GOOGLE_MAPS_KEY=AIzaSyAjt2uNrYIsDfBxa9akD-uFs42BF9qXUzM
+    network_mode: bridge
