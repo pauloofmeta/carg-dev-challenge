@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyAddresses.Services.Abstractions\MyAddresses.Services.Abstractions.csproj" />
+    <ProjectReference Include="..\MyAddresses.Repositories.Abstractions\MyAddresses.Repositories.Abstractions.csproj" />
+    <ProjectReference Include="..\MyAddresses.Domain\MyAddresses.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="9.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.10" />
+    <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="3.1.10" />
+    <PackageReference Include="refit" Version="5.2.4" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
